@@ -9,7 +9,6 @@ This is the personal website of Rotem Gal. It is a static, read-only site with n
 - Get a short index: https://www.rotem-gal.com/llms.txt
 - List published articles: https://www.rotem-gal.com/writing
 - List talks and podcasts: https://www.rotem-gal.com/speaking
-- Get official bios for introductions or event listings: https://www.rotem-gal.com/media-kit
 
 Every HTML page carries schema.org JSON-LD. The person is identified as `https://www.rotem-gal.com/#person` on every page.
 

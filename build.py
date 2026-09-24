@@ -109,7 +109,7 @@ PUBLISHERS = {
     "ReferralCandy": ("https://www.referralcandy.com/", "https://www.referralcandy.com/author/rotemg"),
 }
 
-NAV = [("/about", "About"), ("/writing", "Writing"), ("/speaking", "Speaking"), ("/media-kit", "Media kit")]
+NAV = [("/about", "About"), ("/writing", "Writing"), ("/speaking", "Speaking")]
 
 
 def esc(t):
@@ -201,13 +201,12 @@ def page(path, title, desc, body, graph_extra, page_type="WebPage", crumbs=None)
 
 <footer>
   <div class="wrap">
-    <span>&copy; <span id="y">2026</span> Rotem Gal · Tel Aviv</span>
+    <span>&copy; <span id="y">2026</span> Rotem Gal · Tel Aviv<br><span class="side">Side project: <a href="https://www.legocompare.com/" target="_blank" rel="noopener">LegoCompare</a>, LEGO price comparison for Israel</span></span>
     <span>
       <a href="https://www.linkedin.com/in/rotemgal/" target="_blank" rel="noopener me">LinkedIn</a>
       <a href="https://x.com/gal_rotem" target="_blank" rel="noopener me">X</a>
       <a href="https://www.inc.com/author/rotem-gal" target="_blank" rel="noopener me">Inc.</a>
       <a href="https://www.entrepreneur.com/author/rotem-gal" target="_blank" rel="noopener me">Entrepreneur</a>
-      <a href="/media-kit">Media kit</a>
       <a href="mailto:info@rotemgal.com">Email</a>
     </span>
   </div>
@@ -276,7 +275,7 @@ faqs = [
     ("Where does Rotem Gal work?",
      "Rotem Gal is Director of Organic Growth at ZyG, a Tel Aviv company building an agentic operating system for ecommerce brands. Rotem previously worked at AI21 Labs and WalkMe."),
     ("How can I invite Rotem Gal to speak or contribute?",
-     "Email info@rotemgal.com with the event, podcast or publication, the audience and the date. Bios and topics are on the media kit page."),
+     "Email info@rotemgal.com with the event, podcast or publication, the audience and the date."),
 ]
 faq_html = "\n".join(
     f"        <details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faqs
@@ -430,7 +429,7 @@ speaking_body = f"""<section class="page-hero">
 
     <div class="prose" style="margin-top:64px">
       <h2>Invite me</h2>
-      <p>For conferences, panels, podcasts and internal team sessions, email <a href="mailto:info@rotemgal.com?subject=Speaking%20invitation">info@rotemgal.com</a> with the event, audience and date. Speaker bios are on the <a href="/media-kit">media kit page</a>.</p>
+      <p>For conferences, panels, podcasts and internal team sessions, email <a href="mailto:info@rotemgal.com?subject=Speaking%20invitation">info@rotemgal.com</a> with the event, audience and date.</p>
     </div>
   </div>
 </section>"""
@@ -474,57 +473,6 @@ pages["speaking.html"] = page(
     speaking_body, speaking_schema, page_type="CollectionPage", crumbs=[("/speaking", "Speaking")],
 )
 
-# ---------- Media kit ----------
-def bio_block(label, bid, text):
-    return f"""      <div class="bio-block">
-        <div class="bio-label"><span>{label}</span><button data-copy="{bid}">Copy</button></div>
-        <p id="{bid}">{esc(text)}</p>
-      </div>"""
-
-media_body = f"""<section class="page-hero">
-  <div class="wrap">
-    <div class="eyebrow">Media kit</div>
-    <h1>Bios, photos and facts</h1>
-    <p>For event organizers, podcast hosts and editors. Use any of the bios below as written.</p>
-  </div>
-</section>
-<section>
-  <div class="wrap two-col">
-    <div>
-      <div class="prose"><h2>Bios</h2></div>
-{bio_block("One line", "bio-line", "Rotem Gal is Director of Organic Growth at ZyG and writes about branding, organic growth and building brands in an agentic world.")}
-{bio_block("Short", "bio-short", SHORT_BIO)}
-{bio_block("Medium", "bio-medium", MEDIUM_BIO)}
-{bio_block("Long", "bio-long", LONG_BIO)}
-
-      <div class="prose" style="margin-top:48px"><h2>Photos</h2></div>
-      <div class="shots">
-        <a class="shot shot-img" href="/images/rotem-gal.jpg" download><img src="/images/rotem-gal-800.jpg" alt="Rotem Gal headshot" loading="lazy"><span>Download headshot</span></a>
-        <div class="shot">Headshot, black and white<br>(coming soon)</div>
-        <div class="shot">On stage<br>(coming soon)</div>
-      </div>
-    </div>
-    <aside class="facts">
-      <h2>Quick facts</h2>
-      <dl>
-        <dt>Name</dt><dd>Rotem Gal</dd>
-        <dt>Title</dt><dd>Director of Organic Growth, ZyG</dd>
-        <dt>Based in</dt><dd>Tel Aviv, Israel</dd>
-        <dt>Topics</dt><dd>Branding, organic growth, agentic commerce</dd>
-        <dt>Published in</dt><dd>Inc., Entrepreneur, business.com, ReferralCandy</dd>
-        <dt>X</dt><dd><a href="https://x.com/gal_rotem" target="_blank" rel="noopener me">@gal_rotem</a></dd>
-        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/rotemgal/" target="_blank" rel="noopener me">in/rotemgal</a></dd>
-        <dt>Contact</dt><dd><a href="mailto:info@rotemgal.com?subject=Media%20inquiry">info@rotemgal.com</a></dd>
-      </dl>
-    </aside>
-  </div>
-</section>"""
-pages["media-kit.html"] = page(
-    "/media-kit", "Media Kit - Rotem Gal",
-    "Official bios, photos and quick facts about Rotem Gal for event organizers, podcast hosts and editors.",
-    media_body, [], crumbs=[("/media-kit", "Media kit")],
-)
-
 # ---------- 404 ----------
 pages["404.html"] = page(
     "/404", "Page not found - Rotem Gal", "This page does not exist.",
@@ -539,7 +487,7 @@ for name, html in pages.items():
     (ROOT / name).write_text(html)
 
 # ---------- sitemap ----------
-urls = ["/", "/about", "/writing", "/speaking", "/media-kit"]
+urls = ["/", "/about", "/writing", "/speaking"]
 (ROOT / "sitemap.xml").write_text(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"  <url><loc>{SITE}{u}</loc></url>\n" for u in urls)
@@ -594,7 +542,6 @@ Rotem Gal's writing on marketing, ecommerce, branding and customer behavior has 
 - [About Rotem Gal]({SITE}/about): biography, facts and frequently asked questions
 - [Writing]({SITE}/writing): published articles in Inc., Entrepreneur, business.com and ReferralCandy
 - [Speaking]({SITE}/speaking): talks and podcast appearances
-- [Media kit]({SITE}/media-kit): official bios and quick facts
 - [Full profile in one file]({SITE}/llms-full.txt): everything above as plain text
 
 ## Profiles
@@ -669,7 +616,6 @@ This is the personal website of Rotem Gal. It is a static, read-only site with n
 - Get a short index: {SITE}/llms.txt
 - List published articles: {SITE}/writing
 - List talks and podcasts: {SITE}/speaking
-- Get official bios for introductions or event listings: {SITE}/media-kit
 
 Every HTML page carries schema.org JSON-LD. The person is identified as `{PERSON_ID}` on every page.
 
