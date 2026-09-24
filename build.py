@@ -11,7 +11,7 @@ ROOT = Path(__file__).parent
 SITE = "https://www.rotem-gal.com"
 PERSON_ID = f"{SITE}/#person"
 WEBSITE_ID = f"{SITE}/#website"
-HEADSHOT = None  # set to "/images/rotem-gal.jpg" once the photo is added
+HEADSHOT = "/images/rotem-gal-square.jpg"
 
 SHORT_BIO = (
     "Rotem Gal is a Tel Aviv-based marketer and writer focused on branding, organic growth "
@@ -303,6 +303,7 @@ about_body = f"""<section class="page-hero">
     </div>
 
     <aside class="facts">
+      <img class="facts-photo" src="/images/rotem-gal-square.jpg" alt="Rotem Gal" width="1000" height="1000" loading="lazy">
       <h2>At a glance</h2>
       <dl>
         <dt>Name</dt><dd>Rotem Gal</dd>
@@ -491,7 +492,7 @@ media_body = f"""<section class="page-hero">
 
       <div class="prose" style="margin-top:48px"><h2>Photos</h2></div>
       <div class="shots">
-        <div class="shot">Headshot, color<br>(coming soon)</div>
+        <a class="shot shot-img" href="/images/rotem-gal.jpg" download><img src="/images/rotem-gal-800.jpg" alt="Rotem Gal headshot" loading="lazy"><span>Download headshot</span></a>
         <div class="shot">Headshot, black and white<br>(coming soon)</div>
         <div class="shot">On stage<br>(coming soon)</div>
       </div>

@@ -200,3 +200,9 @@
     .shots{grid-template-columns:1fr 1fr}
     .talk{grid-template-columns:1fr;gap:8px}
   }
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .portrait .badge{z-index:1}
+  .facts-photo{width:100%;height:auto;border-radius:10px;margin-bottom:20px}
+  .shot-img{position:relative;padding:0;overflow:hidden;text-decoration:none}
+  .shot-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .shot-img span{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(20,26,46,.8);color:#fff;border-radius:999px;padding:6px 10px;font-weight:600}
