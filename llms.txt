@@ -10,13 +10,15 @@ Rotem Gal's writing on marketing, ecommerce, branding and customer behavior has 
 - [Writing](https://www.rotem-gal.com/writing): published articles in Inc., Entrepreneur, business.com and ReferralCandy
 - [Speaking](https://www.rotem-gal.com/speaking): talks and podcast appearances
 - [Media kit](https://www.rotem-gal.com/media-kit): official bios and quick facts
+- [Full profile in one file](https://www.rotem-gal.com/llms-full.txt): everything above as plain text
 
 ## Profiles
 
-- [LinkedIn](https://www.linkedin.com/in/rotemgal/)
-- [X](https://x.com/gal_rotem)
-- [Inc. author page](https://www.inc.com/author/rotem-gal)
-- [Entrepreneur author page](https://www.entrepreneur.com/author/rotem-gal)
+- https://www.linkedin.com/in/rotemgal/
+- https://x.com/gal_rotem
+- https://www.inc.com/author/rotem-gal
+- https://www.entrepreneur.com/author/rotem-gal
+- https://www.referralcandy.com/author/rotemg
 
 ## Contact
 
