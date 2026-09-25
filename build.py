@@ -167,9 +167,9 @@ def page(path, title, desc, body, graph_extra, page_type="WebPage", crumbs=None)
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@gal_rotem">
 <meta name="twitter:creator" content="@gal_rotem">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
 <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
