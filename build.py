@@ -37,11 +37,12 @@ SAME_AS = [
     "https://www.inc.com/author/rotem-gal",
     "https://www.entrepreneur.com/author/rotem-gal",
     "https://www.referralcandy.com/author/rotemg",
+    "https://www.wikidata.org/wiki/Q141575278",
 ]
 
-ZYG = {"@type": "Organization", "name": "ZyG", "url": "https://www.zyg.com/"}
-AI21 = {"@type": "Organization", "name": "AI21 Labs", "url": "https://www.ai21.com/"}
-WALKME = {"@type": "Organization", "name": "WalkMe", "url": "https://www.walkme.com/"}
+ZYG = {"@type": "Organization", "name": "ZyG", "url": "https://www.zyg.com/", "sameAs": "https://www.wikidata.org/wiki/Q141575251"}
+AI21 = {"@type": "Organization", "name": "AI21 Labs", "url": "https://www.ai21.com/", "sameAs": "https://www.wikidata.org/wiki/Q113030551"}
+WALKME = {"@type": "Organization", "name": "WalkMe", "url": "https://www.walkme.com/", "sameAs": "https://www.wikidata.org/wiki/Q18156830"}
 
 PERSON = {
     "@type": "Person",
@@ -55,7 +56,7 @@ PERSON = {
     "jobTitle": "Director of Organic Growth",
     "worksFor": ZYG,
     "alumniOf": [
-        {"@type": "CollegeOrUniversity", "name": "Netanya Academic College"},
+        {"@type": "CollegeOrUniversity", "name": "Netanya Academic College", "sameAs": "https://www.wikidata.org/wiki/Q2905352"},
         AI21,
         WALKME,
     ],
