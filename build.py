@@ -14,7 +14,7 @@ WEBSITE_ID = f"{SITE}/#website"
 HEADSHOT = "/images/rotem-gal-square.jpg"
 
 SHORT_BIO = (
-    "Rotem Gal is a Tel Aviv-based marketer and writer focused on branding, organic growth "
+    "Rotem Gal is a Tel Aviv-based entrepreneur and writer focused on branding, organic growth "
     "and how brands get chosen in an agentic world. Rotem is Director of Organic Growth at ZyG "
     "and previously worked at AI21 Labs and WalkMe."
 )
@@ -61,6 +61,14 @@ PERSON = {
     ],
     "homeLocation": {"@type": "Place", "name": "Tel Aviv, Israel"},
     "nationality": {"@type": "Country", "name": "Israel"},
+    "birthDate": "1984",
+    "birthPlace": {"@type": "Place", "name": "Tel Aviv, Israel"},
+    "gender": "Male",
+    "hasOccupation": [
+        {"@type": "Occupation", "name": "Entrepreneur"},
+        {"@type": "Occupation", "name": "Marketer"},
+        {"@type": "Occupation", "name": "Writer"},
+    ],
     "knowsLanguage": ["en", "he"],
     "knowsAbout": ["Branding", "Brand building", "Organic growth", "AI agents",
                    "Agentic commerce", "Ecommerce", "Customer behavior"],
@@ -313,6 +321,9 @@ about_body = f"""<section class="page-hero">
       <h2>At a glance</h2>
       <dl>
         <dt>Name</dt><dd>Rotem Gal</dd>
+        <dt>Occupation</dt><dd>Entrepreneur</dd>
+        <dt>Born</dt><dd>1984, Tel Aviv</dd>
+        <dt>Nationality</dt><dd>Israeli</dd>
         <dt>Based in</dt><dd>Tel Aviv, Israel</dd>
         <dt>Role</dt><dd>Director of Organic Growth, <a href="https://www.zyg.com/" target="_blank" rel="noopener">ZyG</a></dd>
         <dt>Previously</dt><dd>AI21 Labs, WalkMe</dd>
@@ -511,6 +522,9 @@ AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User"
 
 # ---------- llms.txt, llms-full.txt, agents.md ----------
 FACTS_MD = f"""- Name: Rotem Gal (Hebrew: רותם גל)
+- Occupation: entrepreneur
+- Born: 1984, Tel Aviv, Israel
+- Nationality: Israeli
 - Based in: Tel Aviv, Israel
 - Current role: Director of Organic Growth at ZyG (https://www.zyg.com/), a Tel Aviv company building an agentic operating system for ecommerce brands
 - Previously: AI21 Labs, WalkMe
@@ -602,7 +616,7 @@ Medium: {MEDIUM_BIO}
 
 ## Disambiguation
 
-Rotem Gal of rotem-gal.com is the marketer and writer described above, Director of Organic Growth at ZyG. Not to be confused with other people named Rotem Gal or Gal Rotem, or with Arnon Rotem-Gal-Oz.
+Rotem Gal of rotem-gal.com is the entrepreneur and writer described above, Director of Organic Growth at ZyG. Not to be confused with other people named Rotem Gal or Gal Rotem, or with Arnon Rotem-Gal-Oz.
 """)
 
 (ROOT / "agents.md").write_text(f"""# agents.md - rotem-gal.com
