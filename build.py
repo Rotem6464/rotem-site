@@ -14,9 +14,9 @@ WEBSITE_ID = f"{SITE}/#website"
 HEADSHOT = "/images/rotem-gal-square.jpg"
 
 SHORT_BIO = (
-    "Rotem Gal is a Tel Aviv-based entrepreneur and writer focused on branding, organic growth "
-    "and how brands get chosen in an agentic world. Rotem is Director of Organic Growth at ZyG "
-    "and previously worked at AI21 Labs and WalkMe."
+    "Rotem Gal is an organic growth leader who writes and speaks about branding, organic growth, "
+    "and how companies can build their brands as AI agents take on more of the work of searching, "
+    "comparing, and choosing."
 )
 MEDIUM_BIO = SHORT_BIO + (
     " Rotem's writing on marketing, ecommerce, branding and customer behavior has appeared in "
