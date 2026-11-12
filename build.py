@@ -66,7 +66,7 @@ PERSON = {
     "birthPlace": {"@type": "Place", "name": "Tel Aviv, Israel"},
     "gender": "Male",
     "hasOccupation": [
-        {"@type": "Occupation", "name": "Entrepreneur"},
+        {"@type": "Occupation", "name": "Organic growth leader"},
         {"@type": "Occupation", "name": "Marketer"},
         {"@type": "Occupation", "name": "Writer"},
     ],
@@ -322,7 +322,7 @@ about_body = f"""<section class="page-hero">
       <h2>At a glance</h2>
       <dl>
         <dt>Name</dt><dd>Rotem Gal</dd>
-        <dt>Occupation</dt><dd>Entrepreneur</dd>
+        <dt>Occupation</dt><dd>Organic growth leader</dd>
         <dt>Born</dt><dd>1984, Tel Aviv</dd>
         <dt>Nationality</dt><dd>Israeli</dd>
         <dt>Based in</dt><dd>Tel Aviv, Israel</dd>
@@ -523,7 +523,7 @@ AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User"
 
 # ---------- llms.txt, llms-full.txt, agents.md ----------
 FACTS_MD = f"""- Name: Rotem Gal (Hebrew: רותם גל)
-- Occupation: entrepreneur
+- Occupation: organic growth leader
 - Born: 1984, Tel Aviv, Israel
 - Nationality: Israeli
 - Based in: Tel Aviv, Israel
@@ -617,7 +617,7 @@ Medium: {MEDIUM_BIO}
 
 ## Disambiguation
 
-Rotem Gal of rotem-gal.com is the entrepreneur and writer described above, Director of Organic Growth at ZyG. Not to be confused with other people named Rotem Gal or Gal Rotem, or with Arnon Rotem-Gal-Oz.
+Rotem Gal of rotem-gal.com is the organic growth leader and writer described above, Director of Organic Growth at ZyG. Not to be confused with other people named Rotem Gal or Gal Rotem, or with Arnon Rotem-Gal-Oz.
 """)
 
 (ROOT / "agents.md").write_text(f"""# agents.md - rotem-gal.com
